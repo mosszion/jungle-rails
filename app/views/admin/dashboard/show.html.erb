@@ -1,5 +1,15 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
 
-<p><%= @products%></p>
-<p><%= @categories%></p>
+  <br/><br/>
+  <div class="card text-white bg-success mb-3" style="width: 18rem;">
+
+  <div class="card-header">General Store Info</div>
+  <div class="card-body">
+   
+    <p class="card-text">
+      <p>There are <%= @products%> products in the database.</p>
+      <p>Grouped into <%=@categories%> categories.</p>
+    </p>
+   
+    <%= link_to 'Products', [:admin, :products], class: "btn btn-secondary" %>
+  </div>
+</div>
