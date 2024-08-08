@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
     if @user.save
       flash[:notice] = "User created successfully"
-      redirect_to users_path
+      redirect_to products_index_path
     else
       flash[:alert] = "User not created"
       render :new, status: :unprocessable_entity
