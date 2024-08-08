@@ -65,6 +65,18 @@
           <%= link_to cart_path, class: "nav-link " do %> <%= fa_icon "shopping-cart" %>
           My Cart (<%= cart.size %>) <% end %>
         </li>
+        <% if user_signed_in? %> <!-- Conditionally display logout and login links -->
+        <li class="nav-item">
+          <%= link_to 'Log Out', logout_path, method: :delete, class: 'nav-link' %>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to 'Log In', "/login", class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Sign Up', "/signup", class: 'nav-link' %>
+        </li>
+      <% end %>
       </ul>
     </div>
   </div>
