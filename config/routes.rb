@@ -15,7 +15,9 @@ Rails.application.routes.draw do
     resources :categories
   end
   
-  root to: 'products#index'
+  root to: 'sessions#new'
+  get 'products/index'
+  # post "products/index"
   get 'about/index'
 
   resources :users, only: [:index, :new, :create]

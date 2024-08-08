@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
 
     if @user && @user.authenticate(params[:user][:password])
       session[:user_id] = @user.id
-      redirect_to '/'
+      redirect_to '/products/index'
     else
       flash[:alert] = "Login failed"
       redirect_to '/login'
