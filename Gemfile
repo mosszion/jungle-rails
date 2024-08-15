@@ -44,8 +44,7 @@ gem 'rmagick'
 gem 'faker'
 gem 'carrierwave'
 
-# Gemfile
-gem 'bcrypt', '~> 3.1.7'
+
 
 
 
