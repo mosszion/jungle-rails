@@ -9,7 +9,7 @@ describe('Home Page', () => {
   });
   it("There is 2 products on the page", () => {
     cy.visit("/products/index");
-    cy.get(".products article").should("have.length", 1);
+    cy.get(".products article").should("have.length", 2);
   });
   
   
