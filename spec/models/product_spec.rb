@@ -26,7 +26,7 @@ RSpec.describe Product, type: :model do
       it 'is invalid without a price' do
         product = Product.new(name: "Andy", price_cents: nil, quantity: 5, category:category)
         expect(product).not_to be_valid
-        expect(product.errors.full_messages).to include("Price can't be blank")
+        expect(product.errors.full_messages).to include("Price mmcan't be blank")
       end
     end
     context 'when quantity is not present' do
