@@ -61,6 +61,10 @@ group :development, :test do
     #rspec testing app
     gem 'rspec-rails', '~> 6.1.0'
     gem 'net-smtp', require: false
+
+  #cypress install gem 
+  gem "cypress-rails"
+  gem 'database_cleaner-active_record'
 end
 
 group :development do
